@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>	
+	<title>JustTesting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./w3.css">	
+	<link rel="stylesheet" href="./w3-theme-teal.css">
+	<!--[if lt IE 9]>
+	<script src="./html5shiv.min.js"></script>
+	<![endif]-->
+	<body>
+
+	<div class="w3-border">
+			<header class="w3-container w3-theme">			  
+	<div>
+		<span class="w3-dropdown-hover">
+			<button class="w3-btn w3-theme-action">History</button>
+			<div style="width:400px;" class="w3-dropdown-content w3-card-2 w3-theme-l1">
+				<input class="w3-input w3-padding" type="text" placeholder="Search..">
+				<div id="breadcrumbs">
+				</div>
+			</div>
+		</span>
+		<span class="w3-dropdown-hover">
+			<button class="w3-btn w3-theme-action">Quick Links</button>
+			<div style="width:400px;" class="w3-dropdown-content w3-card-2 w3-theme-l1">
+				<input class="w3-input w3-padding" type="text" placeholder="Search..">
+				<a href="http://www.google.com/" target="_blank">Google</a>
+				<a href="http://www.bing.com/" target="_blank">Bing</a>
+			</div>
+		</span>
+	</div>
+			  <input type="hidden" id="current_page_id" />
+			  <h1 id="document_name">JustTesting</h1>
+			<div class="w3-container w3-theme-d3">
+			  <h2 id="current_page_name">Page Name</h2>
+			</div>
+			</header>		  
+
+			<div class="w3-container" id="page_content">
+				<p>Page content</p>
+			</div>
+
+			<footer class="w3-container w3-theme">
+				<div class="w3-section">
+					<button class="w3-btn w3-theme-action w3-round" onclick="previous()" style="display:none" id="btn_previous">&lt;&lt; Previous</button>
+					<button class="w3-btn w3-theme-action w3-round" onclick="next()" style="display:none" id="btn_next">Next &gt;&gt;</button>
+					<button class="w3-btn w3-theme-action w3-round" onclick="finish()" style="display:none" id="btn_finish">Finish</button>
+					<button class="w3-btn w3-theme-action w3-round w3-right" onclick="reset()" id="btn_finish">Reset</button>
+				</div>
+			</footer>
+
+		</div>
+		
+		<script type="text/javascript" src="./idd_data.js"></script>
+		<script type="text/javascript" src="./idd_app.js"></script>
+	</body>	
+</html>
